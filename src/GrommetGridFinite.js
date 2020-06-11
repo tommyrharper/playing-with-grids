@@ -132,6 +132,10 @@ const ResponsiveGrid = () => (
           background="neutral-2"
           justify="center"
           align="center"
+          hoverIndicator
+          onClick={() => {
+            alert("clicked");
+          }}
         >
           <strong>Box 1</strong>
         </Box>
