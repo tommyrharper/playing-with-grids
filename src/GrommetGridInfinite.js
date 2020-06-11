@@ -62,7 +62,8 @@ const animals = [
   "duck",
   "tiger",
   "lion",
-  "cheetah"
+  "cheetah",
+  "smooble"
 ];
 
 // Create box for each animal
