@@ -49,30 +49,6 @@ const rows = {
   xlarge: ["xsmall"]
 };
 
-// Set the different areas you need for every size
-const fixedGridAreas = {
-  small: [
-    { name: "header", start: [0, 0], end: [0, 0] },
-    { name: "test", start: [0, 1], end: [0, 1] },
-    { name: "test1", start: [0, 2], end: [0, 2] }
-  ],
-  medium: [
-    { name: "header", start: [0, 0], end: [1, 0] },
-    { name: "test", start: [0, 1], end: [0, 1] },
-    { name: "test1", start: [1, 1], end: [1, 1] }
-  ],
-  large: [
-    { name: "header", start: [0, 0], end: [0, 0] },
-    { name: "test", start: [1, 0], end: [1, 0] },
-    { name: "test1", start: [2, 0], end: [2, 0] }
-  ],
-  xlarge: [
-    { name: "header", start: [0, 0], end: [0, 0] },
-    { name: "test", start: [1, 0], end: [1, 0] },
-    { name: "test1", start: [2, 0], end: [2, 0] }
-  ]
-};
-
 // Let's say this is returned from an API
 const animals = [
   "dog",
@@ -150,38 +126,6 @@ const ResponsiveGrid = () => (
   <Grommet theme={customBreakpoints}>
     <Box>
       <Heading level={2}>Resize me.</Heading>
-      <Responsive
-        rows={rows}
-        columns={columns}
-        gap="small"
-        areas={fixedGridAreas}
-        margin="medium"
-      >
-        <Box
-          gridArea="header"
-          background="neutral-2"
-          justify="center"
-          align="center"
-        >
-          <strong>Box 1</strong>
-        </Box>
-        <Box
-          gridArea="test"
-          background="neutral-3"
-          justify="center"
-          align="center"
-        >
-          <strong>Box 2</strong>
-        </Box>
-        <Box
-          gridArea="test1"
-          background="neutral-4"
-          justify="center"
-          align="center"
-        >
-          <strong>Box 3</strong>
-        </Box>
-      </Responsive>
       <Responsive gap="small" margin="medium" columns="medium" rows="xsmall">
         {listAnimalsBoxes}
       </Responsive>
@@ -191,19 +135,8 @@ const ResponsiveGrid = () => (
 
 class GrommetGridInfinite extends React.Component {
   render() {
-    return(
-      <Grommet theme={customBreakpoints}>
-      <Box>
-        <Heading level={2}>Resize me.</Heading>
-        <Responsive gap="small" margin="medium" columns="medium" rows="xsmall">
-          {listAnimalsBoxes}
-        </Responsive>
-      </Box>
-    </Grommet>
-    )       
+    return ResponsiveGrid()   
   }
 }
-
-// storiesOf("Grid", module).add("Responsive Grid", () => <ResponsiveGrid />);
 
 export default GrommetGridInfinite;
