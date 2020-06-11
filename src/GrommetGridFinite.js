@@ -73,36 +73,6 @@ const fixedGridAreas = {
   ]
 };
 
-// Let's say this is returned from an API
-const animals = [
-  "dog",
-  "cat",
-  "pig",
-  "cow",
-  "giraffe",
-  "elephant",
-  "dinosaur",
-  "chicken",
-  "duck",
-  "tiger",
-  "lion",
-  "cheetah"
-];
-
-// Create box for each animal
-const listAnimalsBoxes = animals.map(animalName => (
-  <Box
-    elevation="large"
-    key={animalName}
-    background="light-3"
-    flex={false}
-    justify="center"
-    align="center"
-  >
-    <Heading level={2}>{animalName}</Heading>
-  </Box>
-));
-
 const Responsive = ({
   children,
   overrideColumns,
@@ -182,57 +152,14 @@ const ResponsiveGrid = () => (
           <strong>Box 3</strong>
         </Box>
       </Responsive>
-      <Responsive gap="small" margin="medium" columns="medium" rows="xsmall">
-        {listAnimalsBoxes}
-      </Responsive>
     </Box>
   </Grommet>
 );
 
 class GrommetGridTwo extends React.Component {
   render() {
-    return(
-      <Grommet theme={customBreakpoints}>
-      <Box>
-        <Heading level={2}>Resize me.</Heading>
-        <Responsive
-          rows={rows}
-          columns={columns}
-          gap="small"
-          areas={fixedGridAreas}
-          margin="medium"
-        >
-          <Box
-            gridArea="header"
-            background="neutral-2"
-            justify="center"
-            align="center"
-          >
-            <strong>Box 1</strong>
-          </Box>
-          <Box
-            gridArea="test"
-            background="neutral-3"
-            justify="center"
-            align="center"
-          >
-            <strong>Box 2</strong>
-          </Box>
-          <Box
-            gridArea="test1"
-            background="neutral-4"
-            justify="center"
-            align="center"
-          >
-            <strong>Box 3</strong>
-          </Box>
-        </Responsive>
-      </Box>
-    </Grommet>
-    )       
+    return ResponsiveGrid()
   }
 }
-
-// storiesOf("Grid", module).add("Responsive Grid", () => <ResponsiveGrid />);
 
 export default GrommetGridTwo;
