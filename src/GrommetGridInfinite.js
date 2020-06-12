@@ -126,7 +126,7 @@ const Responsive = ({
 const ResponsiveGrid = () => (
   <Grommet theme={customBreakpoints}>
     <Box>
-      <Heading level={2}>Resize me.</Heading>
+      <Heading level={2}>This is GrommitInfinite, for an unlimited number of boxes</Heading>
       <Responsive gap="small" margin="medium" columns="medium" rows="xsmall">
         {listAnimalsBoxes}
       </Responsive>
