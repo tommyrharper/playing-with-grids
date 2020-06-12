@@ -8,6 +8,7 @@ import { grommet } from 'grommet/themes';
 
 const SimpleBox = () => (
   <Grommet theme={grommet}>
+    <h1>This is GrommitBox</h1>
     <Box
       direction="row-responsive"
       justify="center"
