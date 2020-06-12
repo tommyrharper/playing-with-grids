@@ -1,11 +1,5 @@
 # Playing with grids in react
 
-I ran:
-```
-npm install node-sass
-```
-
-GridList is for react native.
 
 ## List of Items created
 
@@ -14,11 +8,21 @@ GridList is for react native.
 - GrommitBox: Simply some boxes created using Grommit.
 - GrommitFinite: A limited number of boxes in a grid.
 - GrommitInfinite: An unlimited number of boxes in a grid.
+- GridList: for React-native, not applicable here.
+
+## React-native
+
+GridList is for react native.
+
 
 ## Grommet
 
 ```
 npm install grommet styled-components polished --save
+```
+Then you can use a statement like this:
+```JavaScript
+import { Grommet, Box, Grid, Heading, ResponsiveContext } from "grommet";
 ```
 
 I have created two Grommet Grids, a GrommetGridFinite and GrommetGridInfinite.
@@ -34,4 +38,15 @@ FlexBox uses plane CSS.
 ## Material UI
 
 ```
-npm install
+npm install @material-ui/core
+```
+
+Then you can use a statement like this:
+```JavaScript
+import React from 'react';
+import { Button } from '@material-ui/core';
+
+function App() {
+  return <Button color="primary">Hello World</Button>;
+}
+```
