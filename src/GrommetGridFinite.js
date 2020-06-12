@@ -119,7 +119,7 @@ const Responsive = ({
 const ResponsiveGrid = () => (
   <Grommet theme={customBreakpoints}>
     <Box>
-      <Heading level={2}>Resize me.</Heading>
+      <Heading level={2}>This is GrommitFinite, for a predefined number of boxes</Heading>
       <Responsive
         rows={rows}
         columns={columns}
