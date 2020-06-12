@@ -5,6 +5,7 @@ import GrommetGridInfinite from './GrommetGridInfinite'
 import GrommetBox from './GrommetBox'
 import GrommetOnClickBox from './GrommetOnClickBox'
 import FlexBox from './FlexBox'
+import MaterialUI from './MaterialUI'
 import './App.css';
 
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
     return(
       <div>
         <h1>Hi, I'm Tom</h1>
+        <MaterialUI/>
         <FlexBox/>
         <GrommetOnClickBox/>
         <GrommetBox/>
