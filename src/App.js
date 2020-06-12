@@ -5,6 +5,7 @@ import GrommetGridInfinite from './GrommetGridInfinite'
 import GrommetBox from './GrommetBox'
 import GrommetOnClickBox from './GrommetOnClickBox'
 import FlexBox from './FlexBox'
+import './App.css';
 
 class App extends React.Component {
   render() {
