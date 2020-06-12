@@ -1,7 +1,7 @@
 import React from "react";
 // import { storiesOf } from "@storybook/react";
 
-import { Grommet, Box, Grid, Heading, ResponsiveContext } from "grommet";
+import { Grommet, Box, Grid, ResponsiveContext } from "grommet";
 
 import { grommet } from "grommet/themes";
 import { deepMerge } from "grommet/utils";
@@ -119,7 +119,7 @@ const Responsive = ({
 const ResponsiveGrid = () => (
   <Grommet theme={customBreakpoints}>
     <Box>
-      <Heading level={2}>This is GrommitFinite, for a predefined number of boxes</Heading>
+      <h1>This is GrommitFinite, for a predefined number of boxes</h1>
       <Responsive
         rows={rows}
         columns={columns}
