@@ -1,5 +1,5 @@
 import React from 'react';
-// import GrommetGrid from './GrommetGrid'
+import GrommetGrid from './GrommetGrid'
 import GrommetGridFinite from './GrommetGridFinite'
 import GrommetGridInfinite from './GrommetGridInfinite'
 import GrommetBox from './GrommetBox'
@@ -16,6 +16,7 @@ class App extends React.Component {
         <GrommetBox/>
         <GrommetGridFinite/>
         <GrommetGridInfinite/>
+        <GrommetGrid/>
       </div>
     ) 
   }
