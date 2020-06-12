@@ -7,6 +7,7 @@ import { Grommet, Box, Text } from "grommet";
 
 const OnClickBox = () => (
   <Grommet >
+    <h1>This is GrommitOnClickBox</h1>
     <Box justify="center" align="center" pad="large">
       {}
       <Box
